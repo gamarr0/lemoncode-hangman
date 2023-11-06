@@ -20,4 +20,4 @@ jobs:
           docker build -t lemoncode/hangman-front:${{ github.sha }} -t lemoncode/hagman-front:latest .
       - name: Push image to registry
         run: |
-          docker push ghcr.io/lemoncode/hangman-front:latest
+          docker push lemoncode/hangman-front:latest
