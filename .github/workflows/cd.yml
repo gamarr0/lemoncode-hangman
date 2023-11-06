@@ -17,7 +17,7 @@ jobs:
       - name: Build image
         working-directory: ./hangman-front
         run: |
-          docker build -t antonio/hangman-front:${{ git.sha }} .
+          docker build -t lemoncode/hangman-front:${{ github.sha }} -t lemoncode/hagman-front:latest .
       - name: Push image to registry
         run: |
-          docker push ghcr.io/antonio/hangman-front:2.5
+          docker push ghcr.io/lemoncode/hangman-front:latest
